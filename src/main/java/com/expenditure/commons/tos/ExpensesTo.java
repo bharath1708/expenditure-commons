@@ -1,5 +1,6 @@
 package com.expenditure.commons.tos;
 
+import java.math.BigDecimal;
 import java.util.Currency;
 import java.util.Date;
 
@@ -12,7 +13,7 @@ public class ExpensesTo {
 	private Date CreatedOn;
 	private Date modifiedon;
 	private String createdBy;
-	private Currency expensedAmount;
+	private BigDecimal expensedAmount;
 	private ExpenseType expenseType;
 	
 	/**
@@ -75,16 +76,17 @@ public class ExpensesTo {
 	public void setCreatedBy(String createdBy) {
 		this.createdBy = createdBy;
 	}
+
 	/**
 	 * @return the expensedAmount
 	 */
-	public Currency getExpensedAmount() {
+	public BigDecimal getExpensedAmount() {
 		return expensedAmount;
 	}
 	/**
 	 * @param expensedAmount the expensedAmount to set
 	 */
-	public void setExpensedAmount(Currency expensedAmount) {
+	public void setExpensedAmount(BigDecimal expensedAmount) {
 		this.expensedAmount = expensedAmount;
 	}
 	/**
